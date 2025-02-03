@@ -40,7 +40,7 @@ const styles = { fixedIcon: { position: 'fixed', bottom: '20px', right: '20px', 
             tabIndex={0}
             className="menu menu-sm dropdown-content bg-base-100 rounded-box z-[1] mt-3 w-52 p-2 shadow text-xl font-medium text-gray-500"
           >
-            {links}
+            {/* {links} */}
           </ul>
         </div>
        <div>
@@ -50,11 +50,11 @@ const styles = { fixedIcon: { position: 'fixed', bottom: '20px', right: '20px', 
       </div>
       <div className="navbar-center hidden lg:flex">
         <ul className="menu menu-horizontal px-1 text-xl font-medium text-gray-500">
-{links}
+{/* {links} */}
         </ul>
       </div>
       <div className="navbar-end">
-      <Link to={'https://docs.google.com/document/d/1WDT2iigjhYb8ruXtkLFa8hIIp0cI2FsNKIuZRmIQGPE/edit?tab=t.0'}> <button className="btn">Download Resume</button></Link>
+       <Link to={'https://drive.google.com/file/d/1-g0Ny3d_kugNGTfuHi-BpVn5krW4XJBg/view?usp=drive_link'}> <button className="btn">Download Resume</button></Link>
       </div>
     
       <div style={styles.fixedIcon} onClick={scrollToTop}> <FaCircleArrowUp className="text-4xl font-semibold text-white" />

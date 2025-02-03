@@ -10,10 +10,10 @@ import { Typewriter } from "react-simple-typewriter";
 
 const Banner = () => {
   return (
-    <div className="lg:w-10/12 mx-auto bg-purple-700 rounded-xl text-white  mt-10 flex flex-col-reverse md:flex-row gap-6 ">
+    <div className=" mx-auto bg-purple-700 rounded-xl text-white  mt-10 flex flex-col-reverse md:flex-row gap-6 ">
       <div className=" flex-1 flex flex-col items-center justify-center px-2 py-4 lg:py-20 lg:px-10 space-y-3">
         <h1 className="text-4xl font-bold text-center">I am a  <Typewriter
-            words={["FrontEnd", "React", "JavaScript"]}
+            words={["web","FrontEnd", "React", "JavaScript"]}
             loop={30}
             cursor
             cursorStyle="_"
@@ -22,8 +22,8 @@ const Banner = () => {
             delaySpeed={1000}
           /> Developer</h1>
         <p className="text-xl font-medium text-center">
-          hello, I am a FrontEnd Developer.
-        I can make front of any website. I know react,javascript,tailwind css,next.js,Express.js etc technology.
+          hello, I am a Web Developer.
+        I can make front and back of any web application. I know React, JavaScript, Tailwind CSS, Next.js, Express.js, MongoDb, HTML5, CSS3 etc technology.
         </p>
         <div className="text-2xl  font-medium flex gap-2">
           <Link to={'https://www.linkedin.com/in/md-habibur-rahman-4bbbbb340/'}>
@@ -41,11 +41,11 @@ const Banner = () => {
             <FaDiscord />
           </button></Link>
         </div>
-       <Link to={'https://docs.google.com/document/d/1WDT2iigjhYb8ruXtkLFa8hIIp0cI2FsNKIuZRmIQGPE/edit?tab=t.0'}> <button className="btn">Download Resume</button></Link>
+       <Link to={'https://drive.google.com/file/d/1-g0Ny3d_kugNGTfuHi-BpVn5krW4XJBg/view?usp=drive_link'}> <button className="btn">Download Resume</button></Link>
       </div>
       <div className=" flex-1 px-2 py-4 lg:py-20 lg:px-10 ">
        <div>
-        <img className=" rounded-xl" src="https://i.ibb.co.com/5GhH6jt/image-4.png" alt="" />
+        <img className=" rounded-3xl h-[350px] sm:h-[400px] lg:h-[500px] w-full px-4 sm:px-10 md:px-4 xl:px-20" src="https://i.ibb.co.com/5GhH6jt/image-4.png" alt="" />
        </div>
       </div>
     </div>
