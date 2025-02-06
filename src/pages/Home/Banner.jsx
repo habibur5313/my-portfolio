@@ -70,7 +70,7 @@ const Banner = () => {
           <button className="text-xl font-medium py-2 px-3 border rounded-xl">Download Resume</button>
         </Link>
       </div>
-      <div className=" flex-1 px-2 py-4 xl:px-20 lg:py-10">
+      <div className=" flex-1 px-2 py-4 xl:px-20 lg:py-20">
         <div>
           <img
             className=" rounded-3xl h-[350px] sm:h-[400px] lg:h-[500px] w-full px-4 sm:px-10 md:px-4"
