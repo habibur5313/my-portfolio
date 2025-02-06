@@ -1,61 +1,65 @@
 import React from "react";
-import "@fortawesome/fontawesome-free/css/all.min.css";
 import { TiHome } from "react-icons/ti";
 import { FaCode, FaUser } from "react-icons/fa6";
 import { MdCastForEducation, MdOutlineConnectWithoutContact } from "react-icons/md";
 import { SiHyperskill } from "react-icons/si";
 const Sidebar = () => {
   return (
-    <div className="fixed z-50 right-0 bottom-10 flex flex-col justify-center items-center">
+    <div className="fixed hidden z-50 right-0 bottom-32 lg:flex flex-col justify-center items-center">
+      <a href="#home">
       <div
-        className="tooltip tooltip-warning px-4 py-3 m-2 rounded-xl tooltip-left bg-yellow-500 text-white"
+        className="tooltip tooltip-warning px-4 py-3 m-2 rounded-xl tooltip-left bg-white text-purple-600 md:text-xl md:font-medium"
         data-tip="Home"
       >
-        <a href="#home">
+        
         <TiHome />
-        </a>
       </div>
+        </a>
+      <a href="#aboutMe">
       <div
-        className="tooltip tooltip-warning px-4 py-3 m-2 rounded-xl tooltip-left bg-yellow-500 text-white"
+        className="tooltip tooltip-warning px-4 py-3 m-2 rounded-xl tooltip-left bg-white text-purple-600 md:text-xl md:font-medium"
         data-tip="About Me"
       >
-        <a href="#aboutMe">
+        
         <FaUser />
-        </a>
       </div>
+        </a>
+        <a href="#skills">
       <div
-        className="tooltip tooltip-warning px-4 py-3 m-2 rounded-xl tooltip-left bg-yellow-500 text-white"
+        className="tooltip tooltip-warning px-4 py-3 m-2 rounded-xl tooltip-left bg-white text-purple-600 md:text-xl md:font-medium"
         data-tip="Skills"
       >
-        <a href="#skills">
+       
         <SiHyperskill />
-        </a>
       </div>
+        </a>
+        <a href="#education">
       <div
-        className="tooltip tooltip-warning px-4 py-3 m-2 rounded-xl tooltip-left bg-yellow-500 text-white"
+        className="tooltip tooltip-warning px-4 py-3 m-2 rounded-xl tooltip-left bg-white text-purple-600 md:text-xl md:font-medium"
         data-tip="Education"
       >
-        <a href="#education">
+        
         <MdCastForEducation />
-        </a>
       </div>
-
+        </a>
+        <a href="#projects">
       <div
-        className="tooltip tooltip-warning px-4 py-3 m-2 rounded-xl tooltip-left bg-yellow-500 text-white"
+        className="tooltip tooltip-warning px-4 py-3 m-2 rounded-xl tooltip-left bg-white text-purple-600 md:text-xl md:font-medium"
         data-tip="Projects"
       >
-        <a href="#projects">
+    
         <FaCode />
-        </a>
       </div>
+        </a>
+        <a href="#contact">
       <div
-        className="tooltip tooltip-warning px-4 py-3 m-2 rounded-xl tooltip-left bg-yellow-500 text-white"
+        className="tooltip tooltip-warning px-4 py-3 m-2 rounded-xl tooltip-left bg-white text-purple-600 md:text-xl md:font-medium"
         data-tip="Contact"
       >
-        <a href="#contact">
+       
         <MdOutlineConnectWithoutContact />
-        </a>
       </div>
+        </a>
     </div>
   );
 };

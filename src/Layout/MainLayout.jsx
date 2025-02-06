@@ -15,10 +15,10 @@ const MainLayout = () => {
       <div className="container mx-auto">
         <Navbar></Navbar>
 <Sidebar></Sidebar>
-        <div className="min-h-[calc(100vh-440px)]">
           <div id="home">
             <Banner></Banner>
           </div>
+          <div className="w-11/12 mx-auto min-h-screen">
           <div id="aboutMe">
             <AboutMe></AboutMe>
           </div>
@@ -35,7 +35,7 @@ const MainLayout = () => {
             <ContactMe></ContactMe>
           </div>
         </div>
-      </div>
+          </div>
       <div id="footer">
         <Footer></Footer>
       </div>

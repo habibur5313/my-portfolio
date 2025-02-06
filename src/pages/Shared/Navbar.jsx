@@ -1,67 +1,76 @@
-import React from "react";
 import { FaCircleArrowUp } from "react-icons/fa6";
+import { IoMenu } from "react-icons/io5";
+import React from "react";
+import { TiHome } from "react-icons/ti";
+import { FaCode, FaUser } from "react-icons/fa6";
+import { MdCastForEducation, MdOutlineConnectWithoutContact } from "react-icons/md";
+import { SiHyperskill } from "react-icons/si";
 import { Link, NavLink } from "react-router-dom";
 
 const Navbar = () => {
+  const styles = {
+    fixedIcon: {
+      position: "fixed",
+      bottom: "20px",
+      right: "40px",
+      width: "50px",
+      height: "50px",
+      cursor: "pointer",
+    },
+  };
 
-const links = <>
-<li><NavLink to={'/'}>Home</NavLink></li>
-<li><NavLink to='/aboutMe'>About Me</NavLink></li>
-<li><NavLink to={'/skills'}>Skills</NavLink></li>
-<li><NavLink to={'/education'}>Education</NavLink></li>
-<li><NavLink to={'/projects'}>Projects</NavLink></li>
-<li><NavLink to={'/contactMe'}>Contact Me</NavLink></li>
-</>
-
-const styles = { fixedIcon: { position: 'fixed', bottom: '20px', right: '20px', width: '50px', height: '50px', cursor: 'pointer' }}
-
- const scrollToTop = () => { window.scrollTo({ top: 0, behavior: 'smooth' });}
+  const scrollToTop = () => {
+    window.scrollTo({ top: 0, behavior: "smooth" });
+  };
   return (
-    <div className="navbar bg-base-100 rounded-xl">
-      <div id="navbar" className="navbar-start">
-        <div className="dropdown">
-          <div tabIndex={0} role="button" className="btn btn-ghost lg:hidden">
-            <svg
-              xmlns="http://www.w3.org/2000/svg"
-              className="h-5 w-5 text-black"
-              fill="none"
-              viewBox="0 0 24 24"
-              stroke="currentColor"
+    <div className="mb-20 lg:mb-10 pt-2">
+      <div className="flex justify-between items-center container mx-auto fixed top-0 opacity-90 z-50 lg:sticky bg-white lg:bg-blue-900 text-black lg:text-white px-0 sm:px-5 md:px-10 rounded-b-xl">
+        <h1 className="text-2xl font-semibold">
+          Habibur<span className="ml-1">Rahman</span> <br />
+          <span className="text-xl font-medium">portfolio</span>
+        </h1>
+        <div className="flex gap-1 sm:gap-3">
+          <button className="sm:text-xl sm:font-medium py-2 px-3 border rounded-xl flex gap-1">
+            <span className="hidden sm:block">Download</span>Resume
+          </button>
+          <div className="dropdown dropdown-end lg:hidden">
+            <div tabIndex={0} role="button" className="text-5xl font-semibold">
+              <IoMenu />
+            </div>
+            <ul
+              tabIndex={0}
+              className="dropdown-content menu bg-base-100 text-black rounded-box w-52 p-2 shadow flex flex-col space-y-3 z-50"
             >
-              <path
-                strokeLinecap="round"
-                strokeLinejoin="round"
-                strokeWidth="2"
-                d="M4 6h16M4 12h8m-8 6h16"
-              />
-            </svg>
+<a href="#home" className="text-xl font-medium flex items-center text-purple-600 gap-1">
+        <TiHome />Home
+        </a>
+      <a href="#aboutMe" className="text-xl font-medium flex items-center text-purple-600 gap-1">
+        <FaUser />About Me
+        </a>
+        <a href="#skills" className="text-xl font-medium flex items-center text-purple-600 gap-1">
+        <SiHyperskill />Skills
+        </a>
+        <a href="#education" className="text-xl font-medium flex items-center text-purple-600 gap-1">
+        <MdCastForEducation />Education
+        </a>
+        <a href="#projects" className="text-xl font-medium flex items-center text-purple-600 gap-1"> <FaCode />Project
+
+        </a>
+        <a href="#contact" className="text-xl font-medium flex items-center text-purple-600 gap-1">
+        <MdOutlineConnectWithoutContact />Contact
+        </a>
+            </ul>
           </div>
-          <ul
-            tabIndex={0}
-            className="menu menu-sm dropdown-content bg-base-100 rounded-box z-[1] mt-3 w-52 p-2 shadow text-xl font-medium text-gray-500"
-          >
-            {/* {links} */}
-          </ul>
         </div>
-       <div>
-       <h1 className="text-xl sm:text-2xl sm:font-semibold md:text-3xl md:font-bold text-black font-medium">H.Rahman</h1>
-       <p className="text-xl sm:font-medium text-black">portfolio</p>
-       </div>
       </div>
-      <div className="navbar-center hidden lg:flex">
-        <ul className="menu menu-horizontal px-1 text-xl font-medium text-gray-500">
-{/* {links} */}
-        </ul>
+      <div
+        className="fixed md:bottom-10 z-50 right-0 bottom-0 w-[50px] h-[50px]"
+        onClick={scrollToTop}
+      >
+        <FaCircleArrowUp className="text-4xl font-semibold text-white" />
       </div>
-      <div className="navbar-end">
-       <Link to={'https://drive.google.com/file/d/1-g0Ny3d_kugNGTfuHi-BpVn5krW4XJBg/view?usp=drive_link'}> <button className="btn">Download Resume</button></Link>
-      </div>
-    
-      <div style={styles.fixedIcon} onClick={scrollToTop}> <FaCircleArrowUp className="text-4xl font-semibold text-white" />
-      </div>
-   
     </div>
   );
 };
 
-export default Navbar
+export default Navbar;
