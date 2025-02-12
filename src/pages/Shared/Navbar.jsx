@@ -30,9 +30,11 @@ const Navbar = () => {
           <span className="text-xl font-medium">portfolio</span>
         </h1>
         <div className="flex gap-1 sm:gap-3">
-          <button className="sm:text-xl sm:font-medium py-2 px-3 border rounded-xl flex gap-1">
+          <Link to={
+            "https://drive.usercontent.google.com/u/0/uc?id=1rub4hCa8zayvcy0Z8xjnmXFNPgvAYQqi&export=download"
+          }><button className="sm:text-xl sm:font-medium py-2 px-3 border rounded-xl flex gap-1">
             <span className="hidden sm:block">Download</span>Resume
-          </button>
+          </button></Link>
           <div className="dropdown dropdown-end lg:hidden">
             <div tabIndex={0} role="button" className="text-5xl font-semibold">
               <IoMenu />

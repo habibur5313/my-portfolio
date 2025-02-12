@@ -7,11 +7,12 @@ import {
 } from "react-icons/fa";
 import { Link } from "react-router-dom";
 import { Typewriter } from "react-simple-typewriter";
-
+import Aos from "aos";
+import "aos/dist/aos.css";
 const Banner = () => {
   return (
-    <div className=" mx-auto bg-purple-700 rounded-xl text-white flex flex-col-reverse md:flex-row gap-6 ">
-      <div className=" flex-1 flex flex-col  justify-center px-2 py-4 lg:px-10 xl:px-20 space-y-2">
+    <div className=" mx-auto bg-purple-700 rounded-xl text-white flex flex-col-reverse md:flex-row gap-6 " data-aos="zoom-in-up">
+      <div className=" flex-1 flex flex-col  justify-center px-2 py-4 lg:px-10 xl:px-20 space-y-2" data-aos="flip-left" data-aos-duration="3000">
         <p className="text-xl font-medium">Hello, There</p>
         <h4 className="text-xl font-medium">
           I am <span className="text-2xl font-bold">Md Habibur Rahman</span>
@@ -36,9 +37,9 @@ const Banner = () => {
           </span>
         </h1>
         <p className="text-xl font-medium">
-          I can make front and back of any web
-          application. I know React, JavaScript, Tailwind CSS, Next.js,
-          Express.js, MongoDb, HTML5, CSS3 etc technology.
+          I can make front and back of any web application. I know React,
+          JavaScript, Tailwind CSS, Next.js, Express.js, MongoDb, HTML5, CSS3
+          etc technology.
         </p>
         <div className="text-2xl  font-medium flex gap-2">
           <Link to={"https://www.linkedin.com/in/md-habibur-rahman-4bbbbb340/"}>
@@ -64,20 +65,22 @@ const Banner = () => {
         </div>
         <Link
           to={
-            "https://drive.google.com/file/d/1rub4hCa8zayvcy0Z8xjnmXFNPgvAYQqi/view?usp=drive_link"
+            "https://drive.usercontent.google.com/u/0/uc?id=1rub4hCa8zayvcy0Z8xjnmXFNPgvAYQqi&export=download"
           }
         >
-          <button className="text-xl font-medium py-2 px-3 border rounded-xl">Download Resume</button>
+          <button className="text-xl font-medium py-2 px-3 border rounded-xl">
+            Download Resume
+          </button>
         </Link>
       </div>
-      <div className=" flex-1 px-2 py-4 xl:px-20 lg:py-20">
-        <div>
+      <div className=" flex-1 px-2 py-4 xl:px-20 lg:py-20 " data-aos="flip-right" data-aos-duration="3000">
+        <>
           <img
             className=" rounded-3xl h-[350px] sm:h-[400px] lg:h-[500px] w-full px-4 sm:px-10 md:px-4"
             src="https://i.ibb.co.com/88PhdHw/image-8.png"
             alt=""
           />
-        </div>
+        </>
       </div>
     </div>
   );

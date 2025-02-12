@@ -1,13 +1,16 @@
-import React, { useRef } from "react";
+import React, { useEffect, useRef } from "react";
 import emailjs from "@emailjs/browser";
 import { FaWhatsappSquare } from "react-icons/fa";
 import { MdAddCall, MdAttachEmail } from "react-icons/md";
 import { FaLocationDot } from "react-icons/fa6";
 import Swal from "sweetalert2";
-
+import Aos from 'aos'
+import 'aos/dist/aos.css'
 const ContactMe = () => {
+  useEffect(() =>  {
+    Aos.init({duration: 2000})
+  },[])
   const form = useRef();
-
   const sendEmail = (e) => {
     e.preventDefault();
 
@@ -40,12 +43,12 @@ const ContactMe = () => {
   };
 
   return (
-    <div className="mt-10">
-      <h1 className="text-4xl mb-4 font-bold text-center uppercase">
-        Contact me
+    <div data-aos='fade-right'>
+      <h1 className="text-4xl mt-20 font-bold text-center uppercase text-purple-600">
+        Contact Us
       </h1>
-      <div className="flex flex-col-reverse md:flex-row md:w-10/12 lg:w-8/12 mx-auto">
-        <form className="flex-1" ref={form} onSubmit={sendEmail}>
+      <div className="flex flex-col-reverse md:flex-row bg-purple-600 text-white py-10 sm:px-10 rounded-xl mt-10  w-full mx-auto">
+        <form className="flex-1 text-black" ref={form} onSubmit={sendEmail}>
           <div className="form-control">
             <label className="label">
               <span className="label-text text-white">Email</span>
@@ -77,7 +80,7 @@ const ContactMe = () => {
         <div className="flex-1 mt-5 space-y-3  md:ml-10">
           <h4 className="flex items-center gap-3 text-xl font-medium">
             <FaLocationDot className="text-3xl font-semibold text-red-600" />{" "}
-            Sylhet , Bangladesh.
+            Sylhet, Bangladesh.
           </h4>
           <p className="flex items-center gap-3 text-xl font-medium">
             <FaWhatsappSquare className="text-3xl font-semibold text-green-500" />{" "}
@@ -89,7 +92,7 @@ const ContactMe = () => {
           </p>
           <p className="flex items-center gap-3 text-xl font-medium">
             <MdAttachEmail className="text-3xl font-semibold text-red-700" />
-            habiburmamun313@gmail.com
+            habiburmamun313 @gmail.com
           </p>
         </div>
       </div>
