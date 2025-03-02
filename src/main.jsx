@@ -6,11 +6,16 @@ import {
 } from "react-router-dom";
 import "./index.css";
 import MainLayout from './Layout/MainLayout';
+import ProjectDetails from './pages/Home/ProjectDetails/ProjectDetails';
 
 const router = createBrowserRouter([
   {
     path: "/",
     element: <MainLayout></MainLayout>
+  },
+  {
+    path: "/projects/:id",
+    element: <ProjectDetails></ProjectDetails>
   },
 ]);
 

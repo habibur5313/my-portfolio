@@ -124,7 +124,7 @@ const Skills = () => {
                 Express.JS
               </h1>
             </div>
-            <div className="rounded-xl bg-pink-300 flex flex-col items-center justify-center">
+            <div className="rounded-xl bg-blue-400 flex flex-col items-center justify-center">
               <button className="bg-white text-4xl mb-2 mt-6 text-black rounded-full py-2  px-2">
                 <SiAxios />
               </button>
@@ -134,7 +134,7 @@ const Skills = () => {
             </div>
             <div className="rounded-xl bg-pink-300 flex flex-col items-center justify-center">
               <button className="bg-white text-4xl mb-2 mt-6 text-black rounded-full py-2  px-2">
-                <SiAxios />
+                <img className="w-10" src="https://i.ibb.co.com/TxrF4GQm/logo-color-600w-Er4-SOkq1.png" alt="tanstack" />
               </button>
               <h1 className="text-xl font-medium lg:text-2xl lg:font-semibold mb-4">
                 Tanstack
@@ -158,7 +158,7 @@ const Skills = () => {
             Tools
           </h4>
           <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-2 2xl:grid-cols-3 gap-3 py-5 px-5  ">
-            <div className="rounded-xl bg-pink-300 flex flex-col items-center justify-center">
+            <div className="rounded-xl bg-purple-400 flex flex-col items-center justify-center">
               <button className="bg-white text-4xl mb-2 mt-6 text-black rounded-full py-2  px-2">
                 <VscVscode />
               </button>
@@ -174,7 +174,7 @@ const Skills = () => {
                 Firebase
               </h1>
             </div>
-            <div className="rounded-xl bg-pink-300 flex flex-col items-center justify-center">
+            <div className="rounded-xl bg-black flex flex-col items-center justify-center">
               <button className="bg-white text-4xl mb-2 mt-6 text-black rounded-full py-2  px-2">
                 <FaGithub />
               </button>
@@ -182,15 +182,15 @@ const Skills = () => {
                 Github
               </h1>
             </div>
-            <div className="rounded-xl bg-pink-300 flex flex-col items-center justify-center">
+            <div className="rounded-xl bg-blue-600 flex flex-col items-center justify-center">
               <button className="bg-white text-4xl mb-2 mt-6 text-black rounded-full py-2  px-2">
-                <FaGitAlt />
+              <img className="w-10" src="https://i.ibb.co.com/gbVNxRPm/download-1.png" alt="surge" />
               </button>
               <h1 className="text-xl font-medium lg:text-2xl lg:font-semibold mb-4">
                 Surge
               </h1>
             </div>
-            <div className="rounded-xl bg-pink-300 flex flex-col items-center justify-center">
+            <div className="rounded-xl bg-orange-500 flex flex-col items-center justify-center">
               <button className="bg-white text-4xl mb-2 mt-6 text-black rounded-full py-2  px-2">
                 <FaGitAlt />
               </button>
@@ -200,7 +200,7 @@ const Skills = () => {
             </div>
             <div className="rounded-xl bg-pink-300 flex flex-col items-center justify-center">
               <button className="bg-white text-4xl mb-2 mt-6 text-black rounded-full py-2  px-2">
-                <FaGitAlt />
+              <img className="w-10" src="https://i.ibb.co.com/4RPXTp6V/download-2.png" alt="dev tool" />
               </button>
               <h1 className="text-xl font-medium lg:text-2xl lg:font-semibold mb-4">
                 Dev Tool
@@ -275,7 +275,7 @@ const Skills = () => {
             </button>
             <h1>JWT</h1>
           </div>
-          <div className=" ml-5 w-[150px] md:w-[300px] py-8 md:py-16 rounded-xl bg-pink-300 flex flex-col items-center justify-center">
+          <div className=" ml-5 w-[150px] md:w-[300px] py-8 md:py-16 rounded-xl bg-blue-400 flex flex-col items-center justify-center">
             <button className="bg-white text-4xl mb-4 text-black rounded-full py-2  px-2">
               <SiAxios />
             </button>
@@ -289,37 +289,38 @@ const Skills = () => {
           </div>
           <div className=" ml-5 w-[150px] md:w-[300px] py-8 md:py-16 rounded-xl bg-pink-300 flex flex-col items-center justify-center">
             <button className="bg-white text-4xl mb-4 text-black rounded-full py-2  px-2">
-              <SiAxios />
+            <img className="w-10" src="https://i.ibb.co.com/TxrF4GQm/logo-color-600w-Er4-SOkq1.png" alt="tanstack" />
             </button>
             <h1>TANSTACK</h1>
           </div>
-          <div className=" ml-5 w-[150px] md:w-[300px] py-8 md:py-16 rounded-xl bg-pink-300 flex flex-col items-center justify-center">
-            <button className="bg-white text-4xl mb-4 text-black rounded-full py-2  px-2">
-              <VscVscode />
-            </button>
-            <h1>VSCODE</h1>
-          </div>
-          <div className=" ml-5 w-[150px] md:w-[300px] py-8 md:py-16 rounded-xl bg-pink-300 flex flex-col items-center justify-center">
-            <button className="bg-white text-4xl mb-4 text-black rounded-full py-2  px-2">
-              <FaGithub />
-            </button>
-            <h1>GITHUB</h1>
-          </div>
-          <div className=" ml-5 w-[150px] md:w-[300px] py-8 md:py-16 rounded-xl bg-pink-300 flex flex-col items-center justify-center">
-            <button className="bg-white text-4xl mb-4 text-black rounded-full py-2  px-2">
-              <FaGitAlt />
-            </button>
-            <h1>SURGE</h1>
-          </div>
-          <div className=" ml-5 w-[150px] md:w-[300px] py-8 md:py-16 rounded-xl bg-pink-300 flex flex-col items-center justify-center">
+          <div className=" ml-5 w-[150px] md:w-[300px] py-8 md:py-16 rounded-xl bg-orange-500 flex flex-col items-center justify-center">
             <button className="bg-white text-4xl mb-4 text-black rounded-full py-2  px-2">
               <FaGitAlt />
             </button>
             <h1>GIT</h1>
           </div>
+          <div className=" ml-5 w-[150px] md:w-[300px] py-8 md:py-16 rounded-xl bg-purple-300 flex flex-col items-center justify-center">
+            <button className="bg-white text-4xl mb-4 text-black rounded-full py-2  px-2">
+              <VscVscode />
+            </button>
+            <h1>VSCODE</h1>
+          </div>
+          <div className=" ml-5 w-[150px] md:w-[300px] py-8 md:py-16 rounded-xl bg-black flex flex-col items-center justify-center">
+            <button className="bg-white text-4xl mb-4 text-black rounded-full py-2  px-2">
+              <FaGithub />
+            </button>
+            <h1>GITHUB</h1>
+          </div>
+          <div className=" ml-5 w-[150px] md:w-[300px] py-8 md:py-16 rounded-xl bg-blue-600 flex flex-col items-center justify-center">
+            <button className="bg-white text-4xl mb-4 text-black rounded-full py-2  px-2">
+            <img className="w-10" src="https://i.ibb.co.com/gbVNxRPm/download-1.png" alt="surge" />
+            </button>
+            <h1>SURGE</h1>
+          </div>
+          
           <div className=" ml-5 w-[150px] md:w-[300px] py-8 md:py-16 rounded-xl bg-pink-300 flex flex-col items-center justify-center">
             <button className="bg-white text-4xl mb-4 text-black rounded-full py-2  px-2">
-              <FaGitAlt />
+            <img className="w-10" src="https://i.ibb.co.com/4RPXTp6V/download-2.png" alt="dev tool" />
             </button>
             <h1>DEV Tool</h1>
           </div>
