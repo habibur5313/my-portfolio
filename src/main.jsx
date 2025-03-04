@@ -15,7 +15,8 @@ const router = createBrowserRouter([
   },
   {
     path: "/projects/:id",
-    element: <ProjectDetails></ProjectDetails>
+    element: <ProjectDetails></ProjectDetails>,
+    loader: ({params}) => fetch(`https://portfolio-server-rho-woad.vercel.app/projects/${params.id}`)
   },
 ]);
 

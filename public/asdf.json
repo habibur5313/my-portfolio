@@ -1,0 +1,24 @@
+[
+  {
+                    "_id": 1,
+    "projectName": "Coupon Chief",
+    "projectCategory": "Coupon",
+    "description": "",
+    "liveLink": "https://habiburmamun-assignment-9.surge.sh",
+    "githubLinkClient": "https://github.com/habibur5313/Chief-Coupon-website",
+    "image": "",
+    "technologyUsed": ["React","JavaScript","Tailwind CSS","Firebase"],
+    "npmPackageUsed": ["animate css","marque","react hot toast","swiper js","AOS"]
+  },
+  {
+                    "_id": 2,
+    "projectName": "Coupon Chief",
+    "projectCategory": "Coupon",
+    "description": "loremlasdjfk llads",
+    "liveLink": "https://habiburmamun-assignment-9.surge.sh",
+    "githubLinkClient": "https://github.com/habibur5313/Chief-Coupon-website",
+    "image": "",
+    "technologyUsed": ["React","JavaScript","Tailwind CSS","Firebase","hasdfl"],
+    "npmPackageUsed": ["animate css","marque","react hot toast","swiper js","AOS"]
+  }
+]

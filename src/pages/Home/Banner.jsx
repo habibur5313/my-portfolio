@@ -1,4 +1,4 @@
-import React from "react";
+
 import {
   FaDiscord,
   FaFacebookSquare,
@@ -7,9 +7,10 @@ import {
 } from "react-icons/fa";
 import { Link } from "react-router-dom";
 import { Typewriter } from "react-simple-typewriter";
-import Aos from "aos";
 import "aos/dist/aos.css";
 const Banner = () => {
+
+   
   return (
     <div className=" mx-auto bg-purple-700 rounded-xl text-white flex flex-col-reverse md:flex-row gap-6 " data-aos="zoom-in-up">
       <div className=" flex-1 flex flex-col  justify-center px-2 py-4 lg:px-10 xl:px-20 space-y-2" data-aos="flip-left" data-aos-duration="3000">
