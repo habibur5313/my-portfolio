@@ -44,8 +44,8 @@ const ContactMe = () => {
 
   return (
     <div data-aos='fade-right'>
-      <h1 className="text-4xl mt-20 font-bold text-center uppercase text-purple-600">
-        Contact Us
+      <h1 className="text-4xl mt-10 font-bold text-center uppercase text-purple-600">
+        Contact Me
       </h1>
       <div className="flex flex-col-reverse md:flex-row bg-purple-600 text-white py-10 sm:px-10 rounded-xl mt-10  w-full mx-auto">
         <form className="flex-1 text-black" ref={form} onSubmit={sendEmail}>
@@ -71,11 +71,12 @@ const ContactMe = () => {
               placeholder="message"
             ></textarea>
           </div>
-          <input
-            type="submit"
-            className="btn btn-primary mt-4 w-[100px]"
-            value="Send"
-          />
+          <button
+      className="btn btn-primary py-2.5 px-5 rounded-md mt-4 text-xl font-bold"
+      style={{
+        boxShadow: '0px 4px 6px rgba(0, 0, 0, 0.2)',
+      }}
+    >Send</button>
         </form>
         <div className="flex-1 mt-5 space-y-3  md:ml-10">
           <h4 className="flex items-center gap-3 text-xl font-medium">
@@ -92,7 +93,7 @@ const ContactMe = () => {
           </p>
           <p className="flex items-center gap-3 text-xl font-medium">
             <MdAttachEmail className="text-3xl font-semibold text-red-700" />
-            habiburmamun313 @gmail.com
+            habiburmamun313@gmail.com
           </p>
         </div>
       </div>

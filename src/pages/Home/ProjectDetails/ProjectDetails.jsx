@@ -5,7 +5,18 @@ import { Link, useLoaderData } from "react-router-dom";
 
 const ProjectDetails = () => {
   const project = useLoaderData();
-  console.log(project);
+  const {
+    description,
+      githubLink,
+      image,
+      liveLink,
+      projectName,
+      technologyUsed,
+      _id,
+      featured1,
+      featured2,
+      featured3,
+    } = project;
 
   return (
     <div className="bg-blue-900 text-white">
@@ -32,15 +43,31 @@ const ProjectDetails = () => {
           <div className="p-2 md:p-4 mt-4 border sm:w-11/12 md:w-10/12 lg:w-9/12 xl:w-8/12 mx-auto">
             <img
               className="w-full"
-              src={project.image}
-              alt=""
+              src={image}
+              alt={projectName}
             />
-            <div className="">
-              <h1>ProjectName: {project.projectName}</h1>
-              <p>{project.description}</p>
-              <p>features: </p>
+            <div className="flex flex-col space-y-3 md:p-4">
+            <div className="flex flex-col md:flex-row md:justify-between md:items-center ">
+      <h1 className="text-xl font-semibold sm:text-2xl sm:font-bold xl:text-3xl uppercase">{projectName}</h1>
+      <p>date</p>
+      </div>
+      <p className="text-xl">{description}</p>
+      <p className="text-xl font-medium">featured:</p>
+      <div className="flex flex-col ml-2 md:ml-4 space-y-1">
+      <p className="text-xl">1. {featured1} </p>
+      <p className="text-xl">2. {featured2} </p>
+      <p className="text-xl">3. {featured3} </p>
+      </div>
+      <div className="flex justify-between items-center">
+      <Link to={liveLink}><button
+      className="btn btn-primary py-2.5 px-5 rounded-xl text-xl font-bold"
+      style={{
+        boxShadow: '0px 4px 6px rgba(0, 0, 0, 0.2)',
+      }}
+    >Live Link</button></Link>
+    </div>
+              
               <p>technologies:</p>
-              <p>links</p>
             </div>
           </div>
         </div>

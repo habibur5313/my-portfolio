@@ -1,24 +1,59 @@
 [
   {
-                    "_id": 1,
-    "projectName": "Coupon Chief",
-    "projectCategory": "Coupon",
-    "description": "",
-    "liveLink": "https://habiburmamun-assignment-9.surge.sh",
-    "githubLinkClient": "https://github.com/habibur5313/Chief-Coupon-website",
-    "image": "",
-    "technologyUsed": ["React","JavaScript","Tailwind CSS","Firebase"],
-    "npmPackageUsed": ["animate css","marque","react hot toast","swiper js","AOS"]
+    "projectName": "Volunteer Network",
+    "projectCategory": "Volunteer Management",
+    "description": "This is a Volunteer Management website. Anyone can become a volunteer through this website. Just by filling a short form.",
+    "liveLink": "https://volunteer-network-simple-website.surge.sh/",
+    "githubLink": "https://github.com/habibur5313/volunteer-management-website",
+    "githubLinkServer": "",
+    "featured1": "Volunteer Opportunities & Event Management: Search for opportunities, sign up for events, and manage events in real-time.",
+    "featured2": "Data Management: Securely store data with MongoDB and generate insightful analytics and reports.",
+    "featured3": "Interactive UI: Enjoy a responsive, user-friendly design built with Tailwind CSS and React.",
+    "image": "https://i.ibb.co.com/8gRch5dK/Screenshot-2025-03-08-153613.png",
+    "technologyUsed": ["React","JavaScript","Tailwind CSS","Firebase","axios"],
+    "npmPackageUsed": ["animate css","marque","react hot toast","sweetalert","swiper js","AOS"]
   },
   {
-                    "_id": 2,
+    "projectName": "Chill Gamer",
+    "projectCategory": "Gaming Review",
+    "description": "This is a Gaming Review website. Here anyone can give a review about any game and see the reviews of others. You can also watch gaming review videos here.",
+    "liveLink": "https://online-gaming-review.surge.sh/",
+    "githubLink": "https://github.com/habibur5313/Online-Gaming-Review-Website",
+    "githubLinkServer": "https://github.com/habibur5313/assignment-10-Online-Gaming-Review-Website-server",
+    "featured1": "Review Submission: Authenticated users can submit, edit, and delete reviews",
+    "featured2": "Game WatchList: Users can manage their watchlist, adding and removing games they are interested in.",
+    "featured3": "Responsive Design and Sorting Options: Tailwind CSS for a clean, responsive layout; users can sort reviews by rating, year, etc.",
+    "image": "https://i.ibb.co.com/vxCmKctM/Screenshot-2025-03-08-155459.png",
+    "technologyUsed": ["React","JavaScript","Tailwind CSS","Firebase","axios"],
+    "npmPackageUsed": ["animate css","marque","react hot toast","sweetalert","swiper js","AOS"]
+  },
+  {
     "projectName": "Coupon Chief",
-    "projectCategory": "Coupon",
-    "description": "loremlasdjfk llads",
-    "liveLink": "https://habiburmamun-assignment-9.surge.sh",
-    "githubLinkClient": "https://github.com/habibur5313/Chief-Coupon-website",
-    "image": "",
-    "technologyUsed": ["React","JavaScript","Tailwind CSS","Firebase","hasdfl"],
-    "npmPackageUsed": ["animate css","marque","react hot toast","swiper js","AOS"]
+    "projectCategory": "Coupon Collection",
+    "description": "If there is a discount on the product of any e-commerce site, you will get the code on this website. You can use that code to get the discount.",
+    "liveLink": "https://habiburmamun-assignment-9.surge.sh/",
+    "githubLink": "https://github.com/habibur5313/Chief-Coupon-website",
+    "githubLinkServer": "",
+    "featured1": "",
+    "featured2": "",
+    "featured3": "",
+    "image": "https://i.ibb.co.com/b77L2Jj/Screenshot-2025-01-04-115051.png",
+    "technologyUsed": ["React","JavaScript","Tailwind CSS","Firebase"],
+    "npmPackageUsed": ["animate css","marque","react hot toast","sweetalert","swiper js","AOS"]
   }
 ]
+
+{
+  "projectName": "",
+  "projectCategory": "",
+  "description": "",
+  "liveLink": "",
+  "githubLink": "",
+  "githubLinkServer": "",
+  "featured1": "",
+  "featured2": "",
+  "featured3": "",
+  "image": "",
+  "technologyUsed": ["React","JavaScript","Tailwind CSS","Firebase","axios"],
+  "npmPackageUsed": ["animate css","marque","react hot toast","sweetalert","swiper js","AOS"]
+}
